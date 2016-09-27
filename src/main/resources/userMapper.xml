@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="userMapper">
+
+    <!--
+        如果基于注解开发  则不需要此文件
+        一般我们需要使用namespace来指定命名空间，这样便于管理使用
+        每个标签的id就是我们在后面需要定义的方法名,id属性值必须是唯一的，不能够重复
+        parameterType来指定输入参数的类型
+        resultType指定输出参数的类型
+    -->
+
+    <!-- 查询 -->
+    <select id="findUserById" parameterType="int" resultType="com.tkeians.Model.User">
+        <!-- 最后不能有分号 -->
+        SELECT * FROM user_nothing WHERE id = #{id}
+    </select>
+
+</mapper>
+
+
+
+

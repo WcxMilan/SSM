@@ -1,0 +1,1 @@
+CREATE TABLE user_nothing(id INT(4) NOT NULL PRIMARY KEY auto_increment,username CHAR(20) NOT NULL,password CHAR(20) NOT NULL)
